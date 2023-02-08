@@ -6,7 +6,7 @@ NEWSPIDER_MODULE = 'pep_parse.spiders'
 
 
 FEEDS = {
-    f'results/pep_%(time)s.csv': {
+    'results/pep_%(time)s.csv': {
         'format': 'csv',
         'fields': ['number', 'name', 'status'],
         'overwrite': True
